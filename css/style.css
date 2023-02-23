@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #04bd7d;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+
+    color: white;
+}
+
+.white-line{
+    height: 2px;
+    width: 90%;
+
+    background-color: white;
+
+    border-radius: 30px;
+}
+/* Assets */
+
+
+
+
+
+/* Form */
+
+
+
+.form-container{
+
+    width: 30%;
+    min-width: 200px;
+    min-height: 500px;
+
+    padding: 20px 20px;
+
+    background-color: #2c2f35;
+
+    border-radius: 30px;
+
+    box-shadow: 12px 12px 30px black;
+}
+
+.form-container .form-inner-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+
+.form-container .form-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.form-container .form-inputs .input-element{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-container .form-inputs .btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-container .form-inputs .btn{
+    padding: 15px 40px;
+
+    margin-top: 40px;
+
+    background-color: #04bd7d;
+
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+
+    border-style: none;
+    border-radius: 30px;
+}
+
+.form-container .form-inputs .btn-return{
+    background-color: #e53854;
+}
+
+.form-container .form-inputs label{
+    color: #5f6776;
+}
+
+.form-container .form-inputs input::placeholder{
+    font-weight: bold;
+
+    color: black;
+}
+
+.form-container .form-inputs .input-element .input-style{
+    padding: 8px 30px;
+
+    min-width: 300px;
+    
+    border-style: none;  
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background-color: #5f6776;
+}
+
+
+/* /Form */
+
+
+
+/* Ticket */
+
+
+
+.ticket-container{
+    width: 40%;
+    min-width: 200px;
+    min-height: 500px;
+
+    padding: 20px 20px;
+
+    background-color: #2c2f35;
+
+    border-radius: 30px;
+
+    box-shadow: 12px 12px 30px black;
+}
+
+.ticket-container .ticket-inner-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.ticket-container .ticket-inner-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 0 40px;
+}
+
+.ticket-container .badges-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.ticket-container .badges-container .badge{
+    padding: 10px 25px;
+    
+    background-color: #5f6776;
+
+    font-size: 0.8em;
+
+    border-radius: 30px;
+}
+
+.white-line-container{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+#total-price{
+    margin-top: 50px;
+    margin-left: 20px;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    color: white;
+}
+
+.result{
+    color: white;
+    font-weight: bold;
+
+    font-size: 1.2em;
+}
+
+#tolal-result{
+    color: white;
+    font-weight: bold;
+
+    font-size: 1.4em;
+
+}
+
+
+
+

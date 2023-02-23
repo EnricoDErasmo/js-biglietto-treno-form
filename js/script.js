@@ -36,7 +36,7 @@ let price = (0.21 * userKm).toFixed(2);
 let discount;
 let totalPrice;
 
-// Creo un evento con il click
+// Creo un evento con click
 searchBtnEl.addEventListener('click', function() {
 
     if (userAge < 18) {

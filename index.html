@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Fredoka:wght@300;700&family=Gugi&family=Montserrat:wght@400;600&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto&family=Rowdies:wght@300&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="css/style.css">
     
     <title>Form biglietto treno</title>
@@ -12,21 +16,118 @@
 
 <body>
 
-    <div>
-        <label for="userKm"></label>
-        <input id="userKm" type="number" placeholder="Inserisci i Km che vuoi percorrere">
+    <div class="back">
+        
+        <div class="container">
+            
+            <div class="form-container">
+
+                <div class="form-inner-top">
+
+                    <h2>Inserisci i tuoi dati</h2>
+
+                    <div class="white-line"></div>
+
+                </div>
+
+                <div class="form-inputs">
+
+                    <div class="input-element"> 
+                        <label>Nome e Cognome</label>
+                        <div>
+                            <input id="name" class="input-style" type="text" placeholder="Inserisci Nome e Cognome">
+                        </div>
+                    </div>
+
+                    <div class="input-element"> 
+                        <label for="userKm">Km da percorrere</label>
+                        <div>
+                            <input id="userKm" class="input-style" type="text" placeholder="Inserisci i Km che vuoi percorrere">
+                        </div>
+                    </div>
+
+                    <div class="input-element">
+                        <label for="userAge">Età</label>
+                        <div>
+                            <input id="userAge" class="input-style" type="text" placeholder="Inserisci la tua età...">
+                        </div>
+                    </div>
+                
+                    <div class="btn-container">
+                        <button id="searchBtn" class="btn">Cerca</button>
+                    
+                        <button id="returnBtn" class="btn btn-return">Annulla</button>
+                    </div>
+
+                </div>
+            
+            </div>
+        
+            <div class="ticket-container">
+
+                <div class="ticket-inner-top">
+
+                    <h2>Il tuo biglietto</h2>
+
+                    <div class="white-line"></div>
+
+                </div>
+
+                <div class="ticket-inner-bottom">
+
+                    <div class="badges-container">
+                        <div class="badge">
+                            Nome Passeggero
+                        </div>
+
+                        <div class="result">
+    
+                        </div>
+                    </div>
+                    
+                    <div class="badges-container">
+                        <div class="badge">
+                            Carrozza
+                        </div>
+
+                        <div class="result">
+    
+                        </div>
+                    </div>
+
+                    <div class="badges-container">
+                        <div class="badge">
+                            Codice CP
+                        </div>
+
+                        <div class="result">
+    
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="white-line-container">
+                    <div class="white-line"></div>
+                </div>
+
+                <div>
+                    <div class="badges-container">
+                        <div id="total-price" class="badge">
+                            Prezzo biglietto
+                        </div>
+
+                        <div id="tolal-result" class="result">
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
     </div>
-
-    <div>
-        <label for="userAge"></label>
-        <input id="userAge" type="number" placeholder="Inserisci la tua età...">
-    </div>
-
-    <div>
-        <button id="searchBtn">Cerca</button>
-    </div>
-
-
 
    <script type="text/javascript" src="js/script.js"></script> 
 </body>
