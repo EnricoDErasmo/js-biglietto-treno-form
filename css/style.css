@@ -87,19 +87,25 @@ h2{
 .form-container .form-inputs .input-element{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
+
+    padding: 0 20px;
+
+    width: 100%;
 }
 
-.form-container .form-inputs .btn-container{
+.form-container .buttons-container{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 50px;
 }
 
-.form-container .form-inputs .btn{
-    padding: 15px 40px;
-
-    margin-top: 40px;
+.form-container .btn{
+    padding: 15px 30px;
 
     background-color: #04bd7d;
 
@@ -113,13 +119,18 @@ h2{
     border-radius: 30px;
 }
 
-.form-container .form-inputs .btn-return{
+.form-container .btn-return{
     background-color: #e53854;
 }
 
 .form-container .form-inputs label{
     color: #5f6776;
 }
+
+.form-container .form-inputs .case{
+    width: 100%;
+}
+
 
 .form-container .form-inputs input::placeholder{
     font-weight: bold;
@@ -128,9 +139,9 @@ h2{
 }
 
 .form-container .form-inputs .input-element .input-style{
-    padding: 8px 30px;
+    padding: 8px 20px;
 
-    min-width: 300px;
+    width: 100%;
     
     border-style: none;  
     border-radius: 20px;
@@ -185,6 +196,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
 }
 
@@ -205,10 +217,12 @@ h2{
     margin-top: 50px;
 }
 
-#total-price{
-    margin-top: 50px;
-    margin-left: 20px;
+.total-price-container{
+    margin-top: 20px;
 
+}
+
+#total-price{
     font-size: 1.2em;
     font-weight: bold;
     
@@ -219,7 +233,7 @@ h2{
     color: white;
     font-weight: bold;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #tolal-result{
@@ -227,7 +241,6 @@ h2{
     font-weight: bold;
 
     font-size: 1.4em;
-
 }
 
 

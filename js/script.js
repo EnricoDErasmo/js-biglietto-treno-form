@@ -25,43 +25,56 @@ ALTRIMENTI se il passeggero ha 65 anni o più:
 
 
 // Imposto variabili per dati utente
-let userKm = parseInt(document.getElementById("userKm").value);
-let userAge = parseInt(document.getElementById("userAge").value);
+let userKmEl = document.getElementById("userKm");
+let userAgeEl = document.getElementById("userAge");
+
+let pricePerKm = 0.21
 
 // Imposto una variabile per il button
 let searchBtnEl = document.getElementById("searchBtn");
 
 // Imposto variabili per i prezzi e sconti
-let price = (0.21 * userKm).toFixed(2);
+let price = (pricePerKm * userKmEl.value).toFixed(2);
 let discount;
 let totalPrice;
 
 // Creo un evento con click
 searchBtnEl.addEventListener('click', function() {
 
-    if (userAge < 18) {
-    
-        discount = ((price / 100) * 20).toFixed(2);
+    if (!isNaN(userKmEl.value) && !isNaN(userAge.value)) {
+
+
+        if (userAgeEl.value < 18) {
         
-        totalPrice = (price - discount).toFixed(2);
-
-        console.log(totalPrice);
+            discount = ((price / 100) * 20).toFixed(2);
+            
+            totalPrice = (price - discount).toFixed(2);
     
-    } else if (userAge >= 65) {
+            
+        
+        } else if (userAgeEl.value >= 65) {
+        
+            discount = ((price / 100) * 40).toFixed(2);
+        
+            totalPrice = (price - discount).toFixed(2);
     
-        discount = ((price / 100) * 40).toFixed(2);
+            
     
-        totalPrice = (price - discount).toFixed(2);
+        } else {
+    
+            totalPrice = price
+    
+            
+    
+        }
 
-        console.log(totalPrice);
+    }else{
 
-    } else {
-
-        totalPrice = price
-
-        console.log(totalPrice);
+        alert("Inserisci solo numeri!")
 
     }
+    
+    
 });
 
 

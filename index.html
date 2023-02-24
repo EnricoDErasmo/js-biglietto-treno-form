@@ -34,33 +34,39 @@
 
                     <div class="input-element"> 
                         <label>Nome e Cognome</label>
-                        <div>
-                            <input id="name" class="input-style" type="text" placeholder="Inserisci Nome e Cognome">
+                        <div class="case">
+                            <input id="name" class="input-style" type="text" placeholder="Inserisci Nome e Cognome...">
                         </div>
                     </div>
 
                     <div class="input-element"> 
                         <label for="userKm">Km da percorrere</label>
-                        <div>
-                            <input id="userKm" class="input-style" type="text" placeholder="Inserisci i Km che vuoi percorrere">
+                        <div class="case">
+                            <input id="userKm" class="input-style" type="text" placeholder="Inserisci i Km che vuoi percorrere...">
                         </div>
                     </div>
 
                     <div class="input-element">
                         <label for="userAge">Età</label>
-                        <div>
+                        <div class="case">
                             <input id="userAge" class="input-style" type="text" placeholder="Inserisci la tua età...">
                         </div>
                     </div>
-                
+                    
+                </div>
+
+                <div class="buttons-container">
+
                     <div class="btn-container">
                         <button id="searchBtn" class="btn">Cerca</button>
-                    
+                    </div>
+
+                    <div class="btn-container">
                         <button id="returnBtn" class="btn btn-return">Annulla</button>
                     </div>
 
                 </div>
-            
+                
             </div>
         
             <div class="ticket-container">
@@ -80,27 +86,37 @@
                             Nome Passeggero
                         </div>
 
-                        <div class="result">
+                        <div id="nameRes" class="result">
     
                         </div>
                     </div>
                     
                     <div class="badges-container">
                         <div class="badge">
-                            Carrozza
+                            Distanza da percorrere
                         </div>
 
-                        <div class="result">
+                        <div id="distanceRes" class="result">
     
                         </div>
                     </div>
 
                     <div class="badges-container">
                         <div class="badge">
-                            Codice CP
+                            Età
                         </div>
 
-                        <div class="result">
+                        <div id="ageRes" class="result">
+    
+                        </div>
+                    </div>
+
+                    <div class="badges-container">
+                        <div class="badge">
+                            Sconto
+                        </div>
+
+                        <div id="discountRes" class="result">
     
                         </div>
                     </div>
@@ -111,7 +127,8 @@
                     <div class="white-line"></div>
                 </div>
 
-                <div>
+                <div class="total-price-container">
+
                     <div class="badges-container">
                         <div id="total-price" class="badge">
                             Prezzo biglietto
