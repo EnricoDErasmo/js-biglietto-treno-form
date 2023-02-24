@@ -236,11 +236,12 @@ h2{
     font-size: 1.1em;
 }
 
-#tolal-result{
+#tolalResult{
+    padding-right: 20px;
+    
     color: white;
     font-weight: bold;
-
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 

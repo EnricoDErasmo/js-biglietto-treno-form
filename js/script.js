@@ -27,6 +27,7 @@ ALTRIMENTI se il passeggero ha 65 anni o più:
 // Imposto variabili per dati utente
 let userKmEl = document.getElementById("userKm");
 let userAgeEl = document.getElementById("userAge");
+let userNameEl = document.getElementById("userName");
 
 let pricePerKm = 0.21
 
@@ -34,7 +35,7 @@ let pricePerKm = 0.21
 let searchBtnEl = document.getElementById("searchBtn");
 
 // Imposto variabili per i prezzi e sconti
-let price = (pricePerKm * userKmEl.value).toFixed(2);
+let price; 
 let discount;
 let totalPrice;
 
@@ -49,24 +50,38 @@ searchBtnEl.addEventListener('click', function() {
             discount = ((price / 100) * 20).toFixed(2);
             
             totalPrice = (price - discount).toFixed(2);
-    
-            
-        
+
+            document.getElementById("discountRes").innerHTML = discount + " €";
+
+            document.getElementById("tolalResult").innerHTML = totalPrice + " €";
+
+
         } else if (userAgeEl.value >= 65) {
         
             discount = ((price / 100) * 40).toFixed(2);
         
             totalPrice = (price - discount).toFixed(2);
-    
-            
+
+            document.getElementById("discountRes").innerHTML = discount + " €";
+
+            document.getElementById("tolalResult").innerHTML = totalPrice + " €";
+  
     
         } else {
     
-            totalPrice = price
-    
-            
-    
+            price = (pricePerKm * userKmEl.value).toFixed(2);
+
+            document.getElementById("discountRes").innerHTML = "Nessuno";
+
+            document.getElementById("tolalResult").innerHTML = price + " €";
+   
         }
+
+        document.getElementById("nameRes").innerHTML = userNameEl.value;
+        document.getElementById("distanceRes").innerHTML = userKmEl.value + " Km";
+        document.getElementById("ageRes").innerHTML = userAgeEl.value + " Anni";
+        
+        
 
     }else{
 
@@ -75,6 +90,39 @@ searchBtnEl.addEventListener('click', function() {
     }
     
     
+});
+
+document.getElementById("returnBtn").addEventListener("click", function() {
+  
+    userNameEl.value = "";
+    userKmEl.value = "";
+    userAgeEl.value = "";
+    document.getElementById("nameRes").innerHTML = "";
+    document.getElementById("distanceRes").innerHTML = "";
+    document.getElementById("ageRes").innerHTML = "";
+
+    if (userAgeEl.value < 18) {
+
+        document.getElementById("discountRes").innerHTML = "";
+
+        document.getElementById("tolalResult").innerHTML = "";
+
+
+    } else if (userAgeEl.value >= 65) {
+
+        document.getElementById("discountRes").innerHTML = "";
+
+        document.getElementById("tolalResult").innerHTML = "";
+
+
+    } else {
+
+        document.getElementById("discountRes").innerHTML = "";
+
+        document.getElementById("tolalResult").innerHTML = "";
+
+    }
+
 });
 
 
